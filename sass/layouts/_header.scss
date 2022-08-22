@@ -1,0 +1,146 @@
+/* header */
+.header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--secondary-bg);
+}
+
+.header__section {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav__item {
+    margin-right: 50px;
+}
+
+.logo {
+    margin-right: 90px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: #000000;
+}
+
+.logo-part {
+    color: var(--accent-text);
+}
+
+.nav__link {
+    display: block;
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+    color: var(--primary-text);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-hover-1::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-text);
+}
+
+.nav-hover-2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-text);
+}
+
+.nav__current {
+    color: var(--accent-text);
+}
+
+.nav-options:hover,
+.nav-options:focus {
+    color: var(--accent-text);
+}
+
+.header-contack__list {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+}
+
+.header-contact__item {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-contact__item:last-child {
+    margin-right: 0;
+}
+
+.header-contacts__info {
+    display: flex;
+    align-items: inline;
+    gap: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .contact__icons {
+            margin-bottom: -1px;
+            fill: var(--secondary-text);
+            fill: currentColor;
+            transition-property: fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+    &:hover,
+    &:focus,
+    .contact__icons:hover,
+    .contact__icons:focus {
+      color: var(--accent-text);
+      fill: var(--accent-text);
+}
+}
+
+
+

@@ -1,0 +1,49 @@
+/* regular customers */
+.section__customers {
+    background-color: var(--header-bg);
+}
+
+.customers-flex {
+    display: flex;
+    gap: 30px;
+}
+
+.customers__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    box-sizing: border-box;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    .company-icons {
+        display: block;
+        fill: var(--icon-color);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &:hover .company-icons,
+    &:focus .company-icons {
+    fill: var(--accent-text);
+}
+
+    &:hover,
+    &:focus,
+    .company-icons:hover,
+    .company-icons:focus {
+    border-color: var(--accent-text);
+    fill: var(--accent-text);
+}
+
+
+}
+
+
+

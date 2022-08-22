@@ -1,0 +1,28 @@
+/* colors */
+:root {
+    /* bg colors */
+    --header-bg: #FFFFFF;
+    --primary-bg: #2F303A;
+    --secondary-bg: #E5E5E5;
+    --selection-bg: #F5F4FA;
+    /* text colors */
+    --accent-text: #2196F3;
+    --primary-text: #212121;
+    --secondary-text: #757575;
+    --footer-nav-text: rgba(255, 255, 255, 0.6);
+    /* button colors */
+    --filter-buttons: #F5F4FA;
+    /* icons color */
+    --icon-color: #AFB1B8;
+    /* anim */
+    --anim-speed: 250ms ease;
+}
+
+body {
+    /* fonts */
+    font-family: roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    /* colors */
+    color: var(--primary-text);
+}
