@@ -1,23 +1,22 @@
 .icons-flex {
-    display: flex;
-    gap: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .icons-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
+    margin-top: 60px;
+    width: 360px;
     height: 120px;
-    margin-bottom: 30px;
     border-radius: 4px;
     background-color: var(--selection-bg);
 }
 
 .benefits__list {
     list-style: none;
-    display: flex;
-    gap: 30px;
+    
 }
 
 .benefits__item:last-child {
@@ -25,17 +24,16 @@
 }
 
 .benefits__title {
-    margin-top: 0;
-    margin-bottom: 10px;
-    /* font */
+    margin-top: 30px;
+    margin-left: 110px;
     font-size: 14px;
     line-height: 1.4;
     text-transform: uppercase;
 }
 
 .benefits__text {
-    margin-top: 0;
-    /* font */
+    margin-top: 10px;
+    text-align: start;
     line-height: 1.7;
     /* color */
     color: var(--secondary-text);

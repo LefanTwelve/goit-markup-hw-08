@@ -1,9 +1,6 @@
 /* header */
-
-
-@include mq(mob-only) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+.conteiner {
+    max-width: 480px;
 }
 
 .header {
@@ -21,18 +18,44 @@
     align-items: center;
 }
 
+.burger-menu {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+   
+}
+
+.burger-menu .icon-close {
+    display: none;
+}
+
+.burger-menu .is-open .icon-close {
+    display: block;
+}
+
+.burger-menu .is-open .icon-menu-burger {
+    display: none;
+}
+
 .nav__list {
     list-style: none;
     display: flex;
+    display: none;
+
 
 }
 
 .nav__item {
     margin-right: 50px;
+    display: none;
 }
 
 .logo {
-    margin-right: 90px;
+    margin-left: 15px;
+    margin-right: 175px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -60,6 +83,7 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
 }
 
 .nav-hover-1::after {
@@ -73,6 +97,7 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-text);
+    display: none;
 }
 
 .nav-hover-2::after {
@@ -86,31 +111,37 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-text);
+    display: none;
 }
 
 .nav__current {
     color: var(--accent-text);
+    display: none;
 }
 
 .nav-options:hover,
 .nav-options:focus {
     color: var(--accent-text);
+    display: none;
 }
 
 .header-contack__list {
     margin-left: auto;
     list-style: none;
     display: flex;
+    display: none;
 }
 
 .header-contact__item {
     margin-right: 50px;
     display: flex;
     align-items: center;
+    display: none;
 }
 
 .header-contact__item:last-child {
     margin-right: 0;
+    display: none;
 }
 
 .header-contacts__info {
@@ -130,24 +161,28 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    .contact__icons {
-            margin-bottom: -1px;
-            fill: var(--secondary-text);
-            fill: currentColor;
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-    &:hover,
-    &:focus,
-    .contact__icons:hover,
-    .contact__icons:focus {
-      color: var(--accent-text);
-      fill: var(--accent-text);
+    display: none;
 }
+
+.contact__icons {
+    margin-bottom: -1px;
+    fill: var(--secondary-text);
+    fill: currentColor;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: none;
 }
+
+.header-contacts__info:hover,
+.header-contacts__info:focus,
+.contact__icons:hover,
+.contact__icons:focus {
+    color: var(--accent-text);
+    fill: var(--accent-text);
+    display: none;
+}
+
 
 
 

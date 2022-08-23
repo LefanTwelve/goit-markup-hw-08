@@ -12,8 +12,8 @@
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<link rel="stylesheet" href="css/main.min.css"/>
+		<!-- <link rel="stylesheet" href="css/styles.css" /> -->
+		<link rel="stylesheet" href="css/main.min.css" />
 		<title>Document</title>
 	</head>
 	<body>
@@ -25,6 +25,12 @@
 						<span class="logo-part">Web</span>
 						Studio
 					</a>
+					<button type="button" class="burger-menu is-open">
+						<svg width="24" height="16" aria-label="Перемикач мобільного меню">
+							<use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+							<use class="icon-menu_burger" href="./images/symbol-defs.svg#icon-menu_burger"></use>
+						</svg>
+					</button>
 					<ul class="nav__list">
 						<li class="nav__item">
 							<a href="./index.html" class="nav__link nav__current nav-hover-1">Студія</a>
@@ -601,5 +607,6 @@
 
 		<!--MODAL JS-->
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
