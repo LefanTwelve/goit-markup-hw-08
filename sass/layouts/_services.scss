@@ -2,17 +2,14 @@
     margin-top: 0;
     list-style: none;
     display: flex;
-    display: none;
 }
 
 .services__item {
     margin-right: 30px;
-    display: none;
 }
 
 .services__item:last-child {
     margin-right: 0;
-    display: none;
 }
 
 .services-image__first {
@@ -23,7 +20,6 @@
     width: 370px;
     height: 70px;
     top: 1425px;
-    display: none;
 }
 
 .services-image__second {
@@ -34,7 +30,6 @@
     width: 370px;
     height: 70px;
     top: 1425px;
-    display: none;
 }
 
 .services-image__third {
@@ -45,7 +40,6 @@
     width: 370px;
     height: 70px;
     top: 1425px;
-    display: none;
 }
 
 .services__text {
@@ -55,5 +49,4 @@
     text-transform: uppercase;
     color: var(--header-bg);
     background-color: rgba(47, 48, 58, 0.8);
-    display: none;
 }
